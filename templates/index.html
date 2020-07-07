@@ -13,12 +13,19 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <div class="page-heading">
-                        <h1>{{ SITENAME }}</h1>
-                        {% if SITESUBTITLE %}
-                            <hr class="small">
-                            <span class="subheading">{{ SITESUBTITLE }}</span>
+                    <!-- <div class="page-heading"> -->
+                        <!-- <h1>{{ SITENAME }}</h1> -->
+                        <!-- {% if SITESUBTITLE %} -->
+                        <!--     <hr class="small"> -->
+                        <!--     <span class="subheading">{{ SITESUBTITLE }}</span> -->
+                        <!-- {% endif %} -->
+
+                    <div class="post-heading">
+                        <h1>{{ HEADER_PAGE_TITLE }}</h1>
+                        {% if SHOW_CREDIT_BY_AUTHOR %}
+                        <span class="subtitle">Author: <a href="https://geekyshacklebolt.github.io" style="color: white" target="_self">{{ AUTHOR }}</span>
                         {% endif %}
+
                         {% if SOCIAL and SHOW_SOCIAL_ON_INDEX_PAGE_HEADER %}
                             <ul class="list-inline text-center">
                             {% for name,link in SOCIAL %}
@@ -77,3 +84,4 @@
 
     {% include "pagination.html" %}
 {% endblock content %}
+
