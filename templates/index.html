@@ -23,7 +23,20 @@
                     <div class="post-heading">
                         <h1>{{ HEADER_PAGE_TITLE }}</h1>
                         {% if SHOW_CREDIT_BY_AUTHOR %}
-                        <span class="subtitle">Author: <a href="https://geekyshacklebolt.github.io" style="color: white" target="_self">{{ AUTHOR }}</span>
+                            <span class="subtitle">
+                                By
+                                <strong>
+                                    <a href="https://geekyshacklebolt.github.io" style="color: white" target="_self">Shiva Saxena</a>
+                                </strong>
+                                <br>
+                                Author of
+                                <strong>
+                                    <a href="https://geekyshacklebolt.wordpress.com" style="color: white;" target="_blank">
+                                        <small class="fa fa-wordpress fa-inverse"></small>
+                                        A Habit of Learning
+                                    </a>
+                                </strong>
+                            </span>
                         {% endif %}
 
                         {% if SOCIAL and SHOW_SOCIAL_ON_INDEX_PAGE_HEADER %}
